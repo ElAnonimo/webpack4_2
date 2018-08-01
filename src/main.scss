@@ -1,0 +1,25 @@
+body {
+  background-color: #a1b2c3;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  img {
+    border-radius: 50%;
+    box-shadow: 0 0 20px #000;
+  }
+
+  h1 {
+    font-family: 'source-code-pro', 'sans-serif';
+    font-weight: 400;
+  }
+}
+
+.counter {
+  border: 3px solid green;
+}
