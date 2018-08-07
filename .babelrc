@@ -1,0 +1,23 @@
+{
+  "plugins": [
+    "transform-es2015-arrow-functions",
+    "async-to-promises",
+    "transform-runtime",
+    "react-hot-loader/babel",
+    ["emotion", {
+      "sourceMap": true,
+      "autoLabel": true
+    }]
+  ],
+  "presets": [
+    [
+      "env", {
+        "debug": true,
+        "targets": {
+          "browsers": ["last 2 versions"]
+        }
+      }
+    ],
+    "babel-preset-react"
+  ]
+}
