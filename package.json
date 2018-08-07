@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:dev": "yarn run webpack --config=config/webpack.dev.js",
-    "build:prod": "NODE_ENV=production yarn run webpack --config=config/webpack.prod.js",
+    "build:prod": "NODE_ENV=production yarn run webpack --config=config/webpack.prod.js --env.NODE_ENV=production",
     "dev-server": "yarn run webpack-dev-server --config=config/webpack.dev.js",
     "dev": "nodemon --inspect --watch config --watch src/server src/server/main.js",
     "prod": "NODE_ENV=production node src/server/main.js",
@@ -36,7 +36,7 @@
     "mini-css-extract-plugin": "^0.4.1",
     "node-sass": "^4.9.2",
     "optimize-css-assets-webpack-plugin": "^5.0.0",
-    "react": "^16.4.1",
+    "react": "^16.4.2",
     "react-dom": "^16.4.1",
     "react-emotion": "^9.2.6",
     "react-hot-loader": "^4.3.4",

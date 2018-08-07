@@ -7,7 +7,11 @@ module.exports = {
   entry: {
     // main: ['babel-polyfill', './src/main.js']
     // main: ['core-js/fn/promise', './src/main.js']
-    main: ['./src/main.js']
+    main: [
+      'babel-runtime/regenerator',
+      'webpack-hot-middleware/client?reload=true',
+      './src/main.js'
+    ]
   },
   mode: 'development',
   output: {
@@ -92,7 +96,7 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new htmlWebpackPlugin({ template: './src/index.html' }),
+    new htmlWebpackPlugin({ template: './src/index.html' })
     // new VueLoaderPlugin()
   ]
 };
