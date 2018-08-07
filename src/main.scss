@@ -17,9 +17,16 @@ body {
   h1 {
     font-family: 'source-code-pro', 'sans-serif';
     font-weight: 400;
+    color: #fff;
   }
 }
 
 .counter {
   border: 3px solid green;
+}
+
+a {
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
 }
