@@ -4,6 +4,9 @@ import { css } from 'emotion';
 import styled from 'react-emotion';
 import styles from './main.scss';
 
+console.log('styles:', styles);
+console.log('styles.counter:', styles.counter);
+
 const Fancy = styled('h1')`
   color: ${props => props.wild ? 'hotpink' : 'gold'}
 `;

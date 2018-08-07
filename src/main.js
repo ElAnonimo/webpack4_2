@@ -3,6 +3,7 @@ require('babel-register');                                // allows for ES6 'imp
 require('webpack-hot-middleware/client?reload=true');     // goes to client to set websocket connection
 require('./index.html');
 require('./app');
+// require('./vue.app');
 
 var a = async (args) => {
   const { a, b } = args;

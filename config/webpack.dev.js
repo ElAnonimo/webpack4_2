@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const htmlWebpackPlugin = require('html-webpack-plugin');
+// const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
   entry: {
@@ -23,8 +24,17 @@ module.exports = {
     hot: true
   },
   devtool: 'source-map',
+  resolve: {
+    alias: {
+      vue$: 'vue/dist/vue.esm.js'
+    }
+  },
   module: {
     rules: [
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader'
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -35,10 +45,18 @@ module.exports = {
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader',
-            query: {
+            options: {
               modules: false,
               // name is css file name, local is class name the applied css rule is from inside css file
               localIdentName: '[name]-[local]-[hash:base64:8]'
+              /* getLocalIdent: (localName, localIdentName) => {
+                const testStr = new String(localIdentName);
+                if (testStr.includes('profile')) {
+                  localName = 'profile';
+                }
+
+                return localName
+              } */
             }
           },
           { loader: 'sass-loader'}
@@ -74,6 +92,7 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new htmlWebpackPlugin({ template: './src/index.html' })
+    new htmlWebpackPlugin({ template: './src/index.html' }),
+    // new VueLoaderPlugin()
   ]
 };
