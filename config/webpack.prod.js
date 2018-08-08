@@ -3,6 +3,8 @@ const webpack = require('webpack');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
 const optimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const minifyPlugin = require('babel-minify-webpack-plugin');
+const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
 // const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = (env) => {
@@ -18,7 +20,6 @@ module.exports = (env) => {
       path: path.resolve(__dirname, '../dist'),
       publicPath: '/'
     },
-    devtool: 'source-map',
     resolve: {
       alias: {
         vue$: 'vue/dist/vue.esm.js'
@@ -39,23 +40,8 @@ module.exports = (env) => {
           test: /\.s?css$/,
           use: [
             { loader: miniCssExtractPlugin.loader },
-            { loader: 'css-loader',
-              options: {
-                minimize: true,
-                modules: false,
-                // name is css file name, local is class name the applied css rule is from inside css file
-                localIdentName: '[name]-[local]-[hash:base64:8]'
-                /* getLocalIdent: (localName, localIdentName) => {
-                  const testStr = new String(localIdentName);
-                  if (testStr.includes('profile')) {
-                    localName = 'profile';
-                  }
-
-                  return localName
-                } */
-              }
-            },
-            { loader: 'sass-loader'}
+            { loader: 'css-loader' },
+            { loader: 'sass-loader' }
           ]
         },
         {
@@ -88,12 +74,14 @@ module.exports = (env) => {
     },
     plugins: [
       new htmlWebpackPlugin({ template: './src/index.html' }),
-      new miniCssExtractPlugin({ name: '[name]-[contenthash].[ext]' }),
       new optimizeCssAssetsPlugin(),
+      new miniCssExtractPlugin({ name: '[name]-[contenthash].[ext]' }),
       new webpack.DefinePlugin({
         // 'process.env.NODE_ENV': JSON.stringify('production')
         'process.env.NODE_ENV': JSON.stringify(env.NODE_ENV)
-      })
+      }),
+      // new minifyPlugin()
+      new uglifyJsPlugin()
       // new VueLoaderPlugin()
     ]
   }

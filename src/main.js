@@ -5,7 +5,7 @@ require('./index.html');
 require('./nav.scss');
 require('./app');
 // require('./vue.app');
-require('react');
+// require('react');
 
 console.log('env is:', process.env.NODE_ENV);
 
@@ -16,3 +16,12 @@ var a = async (args) => {
 };
 
 a({ a: 1, b: 2 });
+
+const globalVar = true;
+const something = function(someArg) {
+  const longVarName = someArg;
+  const result = function(longVarName) {
+    return longVarName * longVarName + globalVar;
+  };
+  console.log(result);
+};
