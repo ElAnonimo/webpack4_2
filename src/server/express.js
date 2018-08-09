@@ -17,8 +17,10 @@ if (!isProd) {
   server.use(webpackHotMiddleware);
 }
 
-const staticMiddleware = express.static('dist');
-server.use(staticMiddleware);
+// const staticMiddleware = express.static('dist');
+// server.use(staticMiddleware);
+const expressStaticGzip = require('express-static-gzip');
+server.use(expressStaticGzip('dist', { enableBrotli: true }));
 
 const port = process.env.PORT || 8080;
 

@@ -5,6 +5,8 @@ const miniCssExtractPlugin = require('mini-css-extract-plugin');
 const optimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const minifyPlugin = require('babel-minify-webpack-plugin');
 const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const compressionPlugin = require('compression-webpack-plugin');
+const brotliPlugin = require('brotli-webpack-plugin');
 // const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = (env) => {
@@ -81,7 +83,9 @@ module.exports = (env) => {
         'process.env.NODE_ENV': JSON.stringify(env.NODE_ENV)
       }),
       // new minifyPlugin()
-      new uglifyJsPlugin()
+      new uglifyJsPlugin(),
+      new compressionPlugin({ algorithm: 'gzip' }),
+      new brotliPlugin()
       // new VueLoaderPlugin()
     ]
   }
