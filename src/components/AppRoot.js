@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import post from '../../data/post.md';
 import '../main.scss';
 
 class AppRoot extends Component {
@@ -10,9 +11,9 @@ class AppRoot extends Component {
   render() {
     return (
       <div>
-        <src src={require("../images/400.jpg")} alt="" />
-        <h1>{this.props.heading}</h1>
-        <div className="content">{this.props.bio}</div>
+        <img src={require("../images/400.jpg")} alt="" />
+        <h1>{post.title}</h1>
+        <div className="content" dangerouslySetInnerHTML={{ __html: post.__content }} />
       </div>
     );
   }

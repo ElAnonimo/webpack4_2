@@ -6,7 +6,7 @@ const optimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const minifyPlugin = require('babel-minify-webpack-plugin');
 const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const compressionPlugin = require('compression-webpack-plugin');
-const brotliPlugin = require('brotli-webpack-plugin');
+const BrotliPlugin = require('brotli-webpack-plugin');
 // const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = (env) => {
@@ -21,6 +21,18 @@ module.exports = (env) => {
       filename: '[name]-bundle.js',
       path: path.resolve(__dirname, '../dist'),
       publicPath: '/'
+    },
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+        cacheGroups: {
+          vendor: {
+            name: 'vendor',
+            chunks: 'initial',
+            minChunks: 2
+          }
+        }
+      }
     },
     resolve: {
       alias: {
@@ -71,6 +83,11 @@ module.exports = (env) => {
               options: { name: 'images/[name]-[hash:8].[ext]' }
             }
           ]
+        },
+        {
+          test: /\.md$/,
+          // use: ['html-loader', 'markdown-loader']
+          use: 'markdown-with-front-matter-loader'
         }
       ]
     },
@@ -85,7 +102,7 @@ module.exports = (env) => {
       // new minifyPlugin()
       new uglifyJsPlugin(),
       new compressionPlugin({ algorithm: 'gzip' }),
-      new brotliPlugin()
+      new BrotliPlugin()
       // new VueLoaderPlugin()
     ]
   }

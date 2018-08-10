@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const htmlWebpackPlugin = require('html-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 // const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
@@ -28,6 +29,18 @@ module.exports = {
     hot: true
   },
   devtool: 'source-map',
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+      cacheGroups: {
+        vendor: {
+          name: 'vendor',
+          chunks: 'initial',
+          minChunks: 2
+        }
+      }
+    }
+  },
   resolve: {
     alias: {
       vue$: 'vue/dist/vue.esm.js'
@@ -92,12 +105,21 @@ module.exports = {
             options: { name: 'images/[name].[ext]' }
           }
         ]
+      },
+      {
+        test: /\.md$/,
+        // use: ['html-loader', 'markdown-loader']
+        use: 'markdown-with-front-matter-loader'
       }
     ]
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new htmlWebpackPlugin({ template: './src/index.html' })
+    new htmlWebpackPlugin({ template: './src/index.html' }),
+    new BundleAnalyzerPlugin({
+      generateStatsFile: true,
+      openAnalyzer: false
+    })
     // new VueLoaderPlugin()
   ]
 };
