@@ -1,0 +1,28 @@
+body {
+  background-color: #a1b2c3;
+  display: flex;
+  justify-content: center; }
+
+.profile #react-root div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw; }
+  .profile #react-root div img {
+    border-radius: 50%;
+    box-shadow: 0 0 20px #000; }
+  .profile #react-root div h1 {
+    font-family: 'source-code-pro', 'sans-serif';
+    font-weight: 400; }
+  .profile #react-root div .content {
+    font-size: 14px; }
+
+.counter {
+  border: 3px solid green; }
+
+a {
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer; }
+

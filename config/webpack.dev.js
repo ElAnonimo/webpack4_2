@@ -31,7 +31,8 @@ module.exports = {
   devtool: 'source-map',
   optimization: {
     splitChunks: {
-      chunks: 'all',
+      chunks: 'all',      // overridden by cacheGroups.chunks
+      automaticNameDelimiter: "-",
       cacheGroups: {
         vendor: {
           name: 'vendor',
@@ -115,7 +116,7 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new htmlWebpackPlugin({ template: './src/index.html' }),
+    // new htmlWebpackPlugin({ template: './src/index.html' }),
     new BundleAnalyzerPlugin({
       generateStatsFile: true,
       openAnalyzer: false

@@ -4,9 +4,9 @@
   "warnings": [
   ],
   "version": "4.16.3",
-  "hash": "76ae0fdd066f2efa9922",
-  "time": 4430,
-  "builtAt": 1533908616023,
+  "hash": "ccc753e3592e7dfc5fd4",
+  "time": 4384,
+  "builtAt": 1534086335837,
   "publicPath": "/",
   "outputPath": "/home/rosewell/Studies/webpack4_2/dist",
   "assetsByChunkName": {
@@ -14,15 +14,15 @@
       "main-bundle.js",
       "main-bundle.js.map"
     ],
-    "vendors~main": [
-      "vendors~main-bundle.js",
-      "vendors~main-bundle.js.map"
+    "vendors-main": [
+      "vendors-main-bundle.js",
+      "vendors-main-bundle.js.map"
     ]
   },
   "assets": [
     {
       "name": "main-bundle.js",
-      "size": 50086,
+      "size": 50095,
       "chunks": [
         "main"
       ],
@@ -32,13 +32,13 @@
       "emitted": true
     },
     {
-      "name": "vendors~main-bundle.js",
+      "name": "vendors-main-bundle.js",
       "size": 1053047,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "chunkNames": [
-        "vendors~main"
+        "vendors-main"
       ],
       "emitted": true
     }
@@ -47,12 +47,12 @@
   "entrypoints": {
     "main": {
       "chunks": [
-        "vendors~main",
+        "vendors-main",
         "main"
       ],
       "assets": [
-        "vendors~main-bundle.js",
-        "vendors~main-bundle.js.map",
+        "vendors-main-bundle.js",
+        "vendors-main-bundle.js.map",
         "main-bundle.js",
         "main-bundle.js.map"
       ],
@@ -65,12 +65,12 @@
   "namedChunkGroups": {
     "main": {
       "chunks": [
-        "vendors~main",
+        "vendors-main",
         "main"
       ],
       "assets": [
-        "vendors~main-bundle.js",
-        "vendors~main-bundle.js.map",
+        "vendors-main-bundle.js",
+        "vendors-main-bundle.js.map",
         "main-bundle.js",
         "main-bundle.js.map"
       ],
@@ -86,7 +86,7 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 11476,
+      "size": 11485,
       "names": [
         "main"
       ],
@@ -94,9 +94,9 @@
         "main-bundle.js",
         "main-bundle.js.map"
       ],
-      "hash": "3f768bbb424445351368",
+      "hash": "816e54dcac9a53e47d96",
       "siblings": [
-        "vendors~main"
+        "vendors-main"
       ],
       "parents": [
       ],
@@ -609,7 +609,7 @@
           "name": "./src/index.html",
           "index": 111,
           "index2": 109,
-          "size": 429,
+          "size": 438,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -652,7 +652,7 @@
           "optimizationBailout": [
           ],
           "depth": 2,
-          "source": "module.exports = \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n  <head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <title>Webpack 4</title>\\n  </head>\\n  <body>\\n    <div class=\\\"profile\\\">\\n      <!-- <img src=\\\"./images/400.jpg\\\" alt=\\\"\\\"> -->\\n      <!-- <h1>Hello Webpack 4</h1> -->\\n      <div id=\\\"react-root\\\"></div>\\n      <!-- <div id=\\\"app\\\"></div> -->\\n    </div>\\n    <script src=\\\"/main-bundle.js\\\"></script>\\n  </body>\\n</html>\\n\";"
+          "source": "module.exports = \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n  <head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <title>Webpack 4</title>\\n  </head>\\n  <body>\\n    <div class=\\\"profile\\\">\\n      <!-- <img src=\\\"./images/400.jpg\\\" alt=\\\"\\\"> -->\\n      <!-- <h1>Hello Webpack 4</h1> -->\\n      <div id=\\\"react-root\\\"></div>\\n      <!-- <div id=\\\"app\\\"></div> -->\\n    </div>\\n    <!-- <script src=\\\"/main-bundle.js\\\"></script> -->\\n  </body>\\n</html>\\n\";"
         },
         {
           "id": "./src/main.js",
@@ -827,20 +827,20 @@
       ]
     },
     {
-      "id": "vendors~main",
+      "id": "vendors-main",
       "rendered": true,
       "initial": true,
       "entry": false,
-      "reason": "split chunk (cache group: vendors) (name: vendors~main)",
+      "reason": "split chunk (cache group: vendors) (name: vendors-main)",
       "size": 973781,
       "names": [
-        "vendors~main"
+        "vendors-main"
       ],
       "files": [
-        "vendors~main-bundle.js",
-        "vendors~main-bundle.js.map"
+        "vendors-main-bundle.js",
+        "vendors-main-bundle.js.map"
       ],
-      "hash": "bfa1a1392fd706ff655b",
+      "hash": "8de5449d6e9b843d30b1",
       "siblings": [
         "main"
       ],
@@ -863,7 +863,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/webpack-hot-middleware/client-overlay.js",
           "issuerId": "./node_modules/webpack-hot-middleware/client-overlay.js",
@@ -919,7 +919,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/strip-ansi/index.js",
           "issuerId": "./node_modules/strip-ansi/index.js",
@@ -975,7 +975,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/main.js",
           "issuerId": "./src/main.js",
@@ -1026,7 +1026,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/helpers/inherits.js",
           "issuerId": "./node_modules/babel-runtime/helpers/inherits.js",
@@ -1092,7 +1092,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/helpers/createClass.js",
           "issuerId": "./node_modules/babel-runtime/helpers/createClass.js",
@@ -1158,7 +1158,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/components/AppRoot.js",
           "issuerId": "./src/components/AppRoot.js",
@@ -1219,7 +1219,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/helpers/inherits.js",
           "issuerId": "./node_modules/babel-runtime/helpers/inherits.js",
@@ -1285,7 +1285,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/helpers/asyncToGenerator.js",
           "issuerId": "./node_modules/babel-runtime/helpers/asyncToGenerator.js",
@@ -1341,7 +1341,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/helpers/typeof.js",
           "issuerId": "./node_modules/babel-runtime/helpers/typeof.js",
@@ -1412,7 +1412,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/helpers/typeof.js",
           "issuerId": "./node_modules/babel-runtime/helpers/typeof.js",
@@ -1483,7 +1483,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/main.js",
           "issuerId": "./src/main.js",
@@ -1534,7 +1534,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/components/AppRoot.js",
           "issuerId": "./src/components/AppRoot.js",
@@ -1595,7 +1595,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/components/AppRoot.js",
           "issuerId": "./src/components/AppRoot.js",
@@ -1656,7 +1656,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/components/AppRoot.js",
           "issuerId": "./src/components/AppRoot.js",
@@ -1717,7 +1717,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/components/AppRoot.js",
           "issuerId": "./src/components/AppRoot.js",
@@ -1778,7 +1778,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/helpers/inherits.js",
           "issuerId": "./node_modules/babel-runtime/helpers/inherits.js",
@@ -1853,7 +1853,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/regenerator/index.js",
           "issuerId": "./node_modules/babel-runtime/regenerator/index.js",
@@ -1904,7 +1904,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/node_modules/regenerator-runtime/runtime-module.js",
           "issuerId": "./node_modules/babel-runtime/node_modules/regenerator-runtime/runtime-module.js",
@@ -1960,7 +1960,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "multi babel-runtime/regenerator webpack-hot-middleware/client?reload=true ./src/main.js",
           "issuerId": 0,
@@ -2015,7 +2015,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/core-js/object/create.js",
           "issuerId": "./node_modules/babel-runtime/core-js/object/create.js",
@@ -2086,7 +2086,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/core-js/object/define-property.js",
           "issuerId": "./node_modules/babel-runtime/core-js/object/define-property.js",
@@ -2157,7 +2157,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/core-js/object/get-prototype-of.js",
           "issuerId": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
@@ -2223,7 +2223,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/core-js/object/set-prototype-of.js",
           "issuerId": "./node_modules/babel-runtime/core-js/object/set-prototype-of.js",
@@ -2294,7 +2294,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/core-js/promise.js",
           "issuerId": "./node_modules/babel-runtime/core-js/promise.js",
@@ -2355,7 +2355,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/core-js/symbol.js",
           "issuerId": "./node_modules/babel-runtime/core-js/symbol.js",
@@ -2431,7 +2431,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/core-js/symbol/iterator.js",
           "issuerId": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
@@ -2507,7 +2507,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -2605,7 +2605,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.array.iterator.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.array.iterator.js",
@@ -2681,7 +2681,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -2752,11 +2752,11 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
-          "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_promise-resolve.js",
-          "issuerId": "./node_modules/core-js/library/modules/_promise-resolve.js",
-          "issuerName": "./node_modules/core-js/library/modules/_promise-resolve.js",
+          "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_species-constructor.js",
+          "issuerId": "./node_modules/core-js/library/modules/_species-constructor.js",
+          "issuerName": "./node_modules/core-js/library/modules/_species-constructor.js",
           "issuerPath": [
             {
               "id": 0,
@@ -2789,9 +2789,9 @@
               "name": "./node_modules/core-js/library/modules/es7.promise.finally.js"
             },
             {
-              "id": "./node_modules/core-js/library/modules/_promise-resolve.js",
-              "identifier": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_promise-resolve.js",
-              "name": "./node_modules/core-js/library/modules/_promise-resolve.js"
+              "id": "./node_modules/core-js/library/modules/_species-constructor.js",
+              "identifier": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_species-constructor.js",
+              "name": "./node_modules/core-js/library/modules/_species-constructor.js"
             }
           ],
           "failed": false,
@@ -2900,7 +2900,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-keys-internal.js",
           "issuerId": "./node_modules/core-js/library/modules/_object-keys-internal.js",
@@ -2996,7 +2996,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -3076,7 +3076,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_classof.js",
           "issuerId": "./node_modules/core-js/library/modules/_classof.js",
@@ -3188,7 +3188,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/promise.js",
           "issuerId": "./node_modules/core-js/library/fn/promise.js",
@@ -3371,7 +3371,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -3478,7 +3478,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_string-at.js",
           "issuerId": "./node_modules/core-js/library/modules/_string-at.js",
@@ -3572,7 +3572,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_hide.js",
           "issuerId": "./node_modules/core-js/library/modules/_hide.js",
@@ -3711,7 +3711,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_task.js",
           "issuerId": "./node_modules/core-js/library/modules/_task.js",
@@ -3805,7 +3805,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-create.js",
           "issuerId": "./node_modules/core-js/library/modules/_object-create.js",
@@ -3909,7 +3909,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -3995,7 +3995,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es7.promise.finally.js",
           "issuerId": "./node_modules/core-js/library/modules/es7.promise.finally.js",
@@ -4138,7 +4138,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-sap.js",
           "issuerId": "./node_modules/core-js/library/modules/_object-sap.js",
@@ -4255,7 +4255,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -4326,7 +4326,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es7.promise.finally.js",
           "issuerId": "./node_modules/core-js/library/modules/es7.promise.finally.js",
@@ -4514,7 +4514,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_export.js",
           "issuerId": "./node_modules/core-js/library/modules/_export.js",
@@ -4644,7 +4644,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/web.dom.iterable.js",
           "issuerId": "./node_modules/core-js/library/modules/web.dom.iterable.js",
@@ -4769,7 +4769,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_task.js",
           "issuerId": "./node_modules/core-js/library/modules/_task.js",
@@ -4854,7 +4854,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-dp.js",
           "issuerId": "./node_modules/core-js/library/modules/_object-dp.js",
@@ -4944,7 +4944,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_task.js",
           "issuerId": "./node_modules/core-js/library/modules/_task.js",
@@ -5020,7 +5020,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_to-iobject.js",
           "issuerId": "./node_modules/core-js/library/modules/_to-iobject.js",
@@ -5101,7 +5101,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_for-of.js",
           "issuerId": "./node_modules/core-js/library/modules/_for-of.js",
@@ -5177,7 +5177,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -5263,7 +5263,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -5397,7 +5397,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_for-of.js",
           "issuerId": "./node_modules/core-js/library/modules/_for-of.js",
@@ -5473,7 +5473,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_iter-define.js",
           "issuerId": "./node_modules/core-js/library/modules/_iter-define.js",
@@ -5549,7 +5549,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.string.iterator.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.string.iterator.js",
@@ -5629,7 +5629,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -5700,7 +5700,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.array.iterator.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.array.iterator.js",
@@ -5776,7 +5776,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/web.dom.iterable.js",
           "issuerId": "./node_modules/core-js/library/modules/web.dom.iterable.js",
@@ -5883,7 +5883,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -5990,7 +5990,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -6076,7 +6076,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -6147,7 +6147,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es7.promise.try.js",
           "issuerId": "./node_modules/core-js/library/modules/es7.promise.try.js",
@@ -6236,7 +6236,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.object.create.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.object.create.js",
@@ -6335,7 +6335,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_hide.js",
           "issuerId": "./node_modules/core-js/library/modules/_hide.js",
@@ -6474,7 +6474,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-create.js",
           "issuerId": "./node_modules/core-js/library/modules/_object-create.js",
@@ -6560,7 +6560,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_set-proto.js",
           "issuerId": "./node_modules/core-js/library/modules/_set-proto.js",
@@ -6655,7 +6655,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -6741,7 +6741,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -6836,7 +6836,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -6931,7 +6931,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
@@ -7016,7 +7016,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-keys.js",
           "issuerId": "./node_modules/core-js/library/modules/_object-keys.js",
@@ -7116,7 +7116,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -7220,7 +7220,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -7324,7 +7324,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
@@ -7400,7 +7400,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es7.promise.try.js",
           "issuerId": "./node_modules/core-js/library/modules/es7.promise.try.js",
@@ -7480,7 +7480,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es7.promise.finally.js",
           "issuerId": "./node_modules/core-js/library/modules/es7.promise.finally.js",
@@ -7560,7 +7560,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_hide.js",
           "issuerId": "./node_modules/core-js/library/modules/_hide.js",
@@ -7663,7 +7663,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -7734,7 +7734,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_iter-define.js",
           "issuerId": "./node_modules/core-js/library/modules/_iter-define.js",
@@ -7819,7 +7819,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.object.set-prototype-of.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.object.set-prototype-of.js",
@@ -7900,7 +7900,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -7971,7 +7971,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -8069,7 +8069,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-gpo.js",
           "issuerId": "./node_modules/core-js/library/modules/_object-gpo.js",
@@ -8168,7 +8168,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_wks.js",
           "issuerId": "./node_modules/core-js/library/modules/_wks.js",
@@ -8262,7 +8262,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es7.promise.finally.js",
           "issuerId": "./node_modules/core-js/library/modules/es7.promise.finally.js",
@@ -8342,7 +8342,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.string.iterator.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.string.iterator.js",
@@ -8413,7 +8413,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -8493,7 +8493,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_array-includes.js",
           "issuerId": "./node_modules/core-js/library/modules/_array-includes.js",
@@ -8594,7 +8594,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_string-at.js",
           "issuerId": "./node_modules/core-js/library/modules/_string-at.js",
@@ -8688,7 +8688,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.array.iterator.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.array.iterator.js",
@@ -8809,7 +8809,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_for-of.js",
           "issuerId": "./node_modules/core-js/library/modules/_for-of.js",
@@ -8894,7 +8894,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
@@ -8979,7 +8979,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-dp.js",
           "issuerId": "./node_modules/core-js/library/modules/_object-dp.js",
@@ -9078,7 +9078,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_wks.js",
           "issuerId": "./node_modules/core-js/library/modules/_wks.js",
@@ -9181,7 +9181,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
           "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -9252,7 +9252,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es7.symbol.async-iterator.js",
           "issuerId": "./node_modules/core-js/library/modules/es7.symbol.async-iterator.js",
@@ -9356,7 +9356,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/symbol/iterator.js",
           "issuerId": "./node_modules/core-js/library/fn/symbol/iterator.js",
@@ -9455,7 +9455,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/web.dom.iterable.js",
           "issuerId": "./node_modules/core-js/library/modules/web.dom.iterable.js",
@@ -9634,7 +9634,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_for-of.js",
           "issuerId": "./node_modules/core-js/library/modules/_for-of.js",
@@ -9710,7 +9710,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/web.dom.iterable.js",
           "issuerId": "./node_modules/core-js/library/modules/web.dom.iterable.js",
@@ -9781,7 +9781,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/object/create.js",
           "issuerId": "./node_modules/core-js/library/fn/object/create.js",
@@ -9857,7 +9857,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/object/define-property.js",
           "issuerId": "./node_modules/core-js/library/fn/object/define-property.js",
@@ -9933,7 +9933,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/object/get-prototype-of.js",
           "issuerId": "./node_modules/core-js/library/fn/object/get-prototype-of.js",
@@ -10004,7 +10004,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/object/set-prototype-of.js",
           "issuerId": "./node_modules/core-js/library/fn/object/set-prototype-of.js",
@@ -10080,7 +10080,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/promise.js",
           "issuerId": "./node_modules/core-js/library/fn/promise.js",
@@ -10155,7 +10155,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/promise.js",
           "issuerId": "./node_modules/core-js/library/fn/promise.js",
@@ -10221,7 +10221,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/promise.js",
           "issuerId": "./node_modules/core-js/library/fn/promise.js",
@@ -10296,7 +10296,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/symbol/index.js",
           "issuerId": "./node_modules/core-js/library/fn/symbol/index.js",
@@ -10377,7 +10377,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/promise.js",
           "issuerId": "./node_modules/core-js/library/fn/promise.js",
@@ -10443,7 +10443,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/promise.js",
           "issuerId": "./node_modules/core-js/library/fn/promise.js",
@@ -10509,7 +10509,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/symbol/index.js",
           "issuerId": "./node_modules/core-js/library/fn/symbol/index.js",
@@ -10590,7 +10590,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/symbol/index.js",
           "issuerId": "./node_modules/core-js/library/fn/symbol/index.js",
@@ -10671,7 +10671,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/promise.js",
           "issuerId": "./node_modules/core-js/library/fn/promise.js",
@@ -10746,7 +10746,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/css-loader/index.js??ref--6-1!/home/rosewell/Studies/webpack4_2/node_modules/sass-loader/lib/loader.js!/home/rosewell/Studies/webpack4_2/src/nav.scss",
           "issuerId": "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/nav.scss",
@@ -10816,7 +10816,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-hot-loader/dist/react-hot-loader.development.js",
           "issuerId": "./node_modules/react-hot-loader/dist/react-hot-loader.development.js",
@@ -10877,7 +10877,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-dom/cjs/react-dom.development.js",
           "issuerId": "./node_modules/react-dom/cjs/react-dom.development.js",
@@ -10943,7 +10943,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/fbjs/lib/camelizeStyleName.js",
           "issuerId": "./node_modules/fbjs/lib/camelizeStyleName.js",
@@ -11014,7 +11014,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-dom/cjs/react-dom.development.js",
           "issuerId": "./node_modules/react-dom/cjs/react-dom.development.js",
@@ -11080,7 +11080,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-dom/cjs/react-dom.development.js",
           "issuerId": "./node_modules/react-dom/cjs/react-dom.development.js",
@@ -11146,7 +11146,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react/cjs/react.development.js",
           "issuerId": "./node_modules/react/cjs/react.development.js",
@@ -11230,7 +11230,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react/cjs/react.development.js",
           "issuerId": "./node_modules/react/cjs/react.development.js",
@@ -11305,7 +11305,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-dom/cjs/react-dom.development.js",
           "issuerId": "./node_modules/react-dom/cjs/react-dom.development.js",
@@ -11371,7 +11371,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/fbjs/lib/hyphenateStyleName.js",
           "issuerId": "./node_modules/fbjs/lib/hyphenateStyleName.js",
@@ -11442,7 +11442,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-dom/cjs/react-dom.development.js",
           "issuerId": "./node_modules/react-dom/cjs/react-dom.development.js",
@@ -11508,7 +11508,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react/cjs/react.development.js",
           "issuerId": "./node_modules/react/cjs/react.development.js",
@@ -11583,7 +11583,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/fbjs/lib/isTextNode.js",
           "issuerId": "./node_modules/fbjs/lib/isTextNode.js",
@@ -11659,7 +11659,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/fbjs/lib/containsNode.js",
           "issuerId": "./node_modules/fbjs/lib/containsNode.js",
@@ -11730,7 +11730,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-dom/cjs/react-dom.development.js",
           "issuerId": "./node_modules/react-dom/cjs/react-dom.development.js",
@@ -11796,7 +11796,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react/cjs/react.development.js",
           "issuerId": "./node_modules/react/cjs/react.development.js",
@@ -11871,7 +11871,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-hot-loader/dist/react-hot-loader.development.js",
           "issuerId": "./node_modules/react-hot-loader/dist/react-hot-loader.development.js",
@@ -11932,7 +11932,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/webpack-hot-middleware/client-overlay.js",
           "issuerId": "./node_modules/webpack-hot-middleware/client-overlay.js",
@@ -11988,7 +11988,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/html-entities/index.js",
           "issuerId": "./node_modules/html-entities/index.js",
@@ -12049,7 +12049,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/html-entities/index.js",
           "issuerId": "./node_modules/html-entities/index.js",
@@ -12119,7 +12119,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/html-entities/index.js",
           "issuerId": "./node_modules/html-entities/index.js",
@@ -12180,7 +12180,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react/cjs/react.development.js",
           "issuerId": "./node_modules/react/cjs/react.development.js",
@@ -12264,7 +12264,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react/cjs/react.development.js",
           "issuerId": "./node_modules/react/cjs/react.development.js",
@@ -12348,7 +12348,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/prop-types/index.js",
           "issuerId": "./node_modules/prop-types/index.js",
@@ -12414,7 +12414,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-hot-loader/dist/react-hot-loader.development.js",
           "issuerId": "./node_modules/react-hot-loader/dist/react-hot-loader.development.js",
@@ -12475,7 +12475,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/prop-types/checkPropTypes.js",
           "issuerId": "./node_modules/prop-types/checkPropTypes.js",
@@ -12555,7 +12555,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/querystring-es3/index.js",
           "issuerId": "./node_modules/querystring-es3/index.js",
@@ -12611,7 +12611,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/querystring-es3/index.js",
           "issuerId": "./node_modules/querystring-es3/index.js",
@@ -12667,7 +12667,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/webpack-hot-middleware/client.js?reload=true",
           "issuerId": "./node_modules/webpack-hot-middleware/client.js?reload=true",
@@ -12718,7 +12718,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-dom/index.js",
           "issuerId": "./node_modules/react-dom/index.js",
@@ -12779,7 +12779,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/app.js",
           "issuerId": "./src/app.js",
@@ -12835,7 +12835,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-hot-loader/index.js",
           "issuerId": "./node_modules/react-hot-loader/index.js",
@@ -12891,7 +12891,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/main.js",
           "issuerId": "./src/main.js",
@@ -13023,7 +13023,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-hot-loader/dist/react-hot-loader.development.js",
           "issuerId": "./node_modules/react-hot-loader/dist/react-hot-loader.development.js",
@@ -13086,7 +13086,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react/index.js",
           "issuerId": "./node_modules/react/index.js",
@@ -13147,7 +13147,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/app.js",
           "issuerId": "./src/app.js",
@@ -13230,7 +13230,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-hot-loader/dist/react-hot-loader.development.js",
           "issuerId": "./node_modules/react-hot-loader/dist/react-hot-loader.development.js",
@@ -13291,7 +13291,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/webpack-hot-middleware/client.js?reload=true",
           "issuerId": "./node_modules/webpack-hot-middleware/client.js?reload=true",
@@ -13342,7 +13342,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/style-loader/index.js!/home/rosewell/Studies/webpack4_2/node_modules/css-loader/index.js??ref--6-1!/home/rosewell/Studies/webpack4_2/node_modules/sass-loader/lib/loader.js!/home/rosewell/Studies/webpack4_2/src/nav.scss",
           "issuerId": "./src/nav.scss",
@@ -13407,7 +13407,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/style-loader/lib/addStyles.js",
           "issuerId": "./node_modules/style-loader/lib/addStyles.js",
@@ -13468,7 +13468,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/webpack-hot-middleware/client.js?reload=true",
           "issuerId": "./node_modules/webpack-hot-middleware/client.js?reload=true",
@@ -13519,7 +13519,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "multi babel-runtime/regenerator webpack-hot-middleware/client?reload=true ./src/main.js",
           "issuerId": 0,
@@ -13565,7 +13565,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/webpack-hot-middleware/client.js?reload=true",
           "issuerId": "./node_modules/webpack-hot-middleware/client.js?reload=true",
@@ -13616,7 +13616,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/fast-levenshtein/levenshtein.js",
           "issuerId": "./node_modules/fast-levenshtein/levenshtein.js",
@@ -13682,7 +13682,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/fast-levenshtein/levenshtein.js",
           "issuerId": "./node_modules/fast-levenshtein/levenshtein.js",
@@ -13748,7 +13748,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "vendors~main"
+            "vendors-main"
           ],
           "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/webpack-hot-middleware/client.js?reload=true",
           "issuerId": "./node_modules/webpack-hot-middleware/client.js?reload=true",
@@ -13968,7 +13968,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/webpack-hot-middleware/client-overlay.js",
       "issuerId": "./node_modules/webpack-hot-middleware/client-overlay.js",
@@ -14024,7 +14024,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/strip-ansi/index.js",
       "issuerId": "./node_modules/strip-ansi/index.js",
@@ -14080,7 +14080,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/main.js",
       "issuerId": "./src/main.js",
@@ -14131,7 +14131,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/helpers/inherits.js",
       "issuerId": "./node_modules/babel-runtime/helpers/inherits.js",
@@ -14197,7 +14197,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/helpers/createClass.js",
       "issuerId": "./node_modules/babel-runtime/helpers/createClass.js",
@@ -14263,7 +14263,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/components/AppRoot.js",
       "issuerId": "./src/components/AppRoot.js",
@@ -14324,7 +14324,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/helpers/inherits.js",
       "issuerId": "./node_modules/babel-runtime/helpers/inherits.js",
@@ -14390,7 +14390,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/helpers/asyncToGenerator.js",
       "issuerId": "./node_modules/babel-runtime/helpers/asyncToGenerator.js",
@@ -14446,7 +14446,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/helpers/typeof.js",
       "issuerId": "./node_modules/babel-runtime/helpers/typeof.js",
@@ -14517,7 +14517,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/helpers/typeof.js",
       "issuerId": "./node_modules/babel-runtime/helpers/typeof.js",
@@ -14588,7 +14588,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/main.js",
       "issuerId": "./src/main.js",
@@ -14639,7 +14639,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/components/AppRoot.js",
       "issuerId": "./src/components/AppRoot.js",
@@ -14700,7 +14700,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/components/AppRoot.js",
       "issuerId": "./src/components/AppRoot.js",
@@ -14761,7 +14761,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/components/AppRoot.js",
       "issuerId": "./src/components/AppRoot.js",
@@ -14822,7 +14822,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/components/AppRoot.js",
       "issuerId": "./src/components/AppRoot.js",
@@ -14883,7 +14883,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/helpers/inherits.js",
       "issuerId": "./node_modules/babel-runtime/helpers/inherits.js",
@@ -14958,7 +14958,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/regenerator/index.js",
       "issuerId": "./node_modules/babel-runtime/regenerator/index.js",
@@ -15009,7 +15009,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/node_modules/regenerator-runtime/runtime-module.js",
       "issuerId": "./node_modules/babel-runtime/node_modules/regenerator-runtime/runtime-module.js",
@@ -15065,7 +15065,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "multi babel-runtime/regenerator webpack-hot-middleware/client?reload=true ./src/main.js",
       "issuerId": 0,
@@ -15120,7 +15120,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/core-js/object/create.js",
       "issuerId": "./node_modules/babel-runtime/core-js/object/create.js",
@@ -15191,7 +15191,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/core-js/object/define-property.js",
       "issuerId": "./node_modules/babel-runtime/core-js/object/define-property.js",
@@ -15262,7 +15262,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/core-js/object/get-prototype-of.js",
       "issuerId": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
@@ -15328,7 +15328,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/core-js/object/set-prototype-of.js",
       "issuerId": "./node_modules/babel-runtime/core-js/object/set-prototype-of.js",
@@ -15399,7 +15399,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/core-js/promise.js",
       "issuerId": "./node_modules/babel-runtime/core-js/promise.js",
@@ -15460,7 +15460,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/core-js/symbol.js",
       "issuerId": "./node_modules/babel-runtime/core-js/symbol.js",
@@ -15536,7 +15536,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-runtime/core-js/symbol/iterator.js",
       "issuerId": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
@@ -15612,7 +15612,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -15710,7 +15710,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.array.iterator.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.array.iterator.js",
@@ -15786,7 +15786,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -15857,11 +15857,11 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
-      "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_promise-resolve.js",
-      "issuerId": "./node_modules/core-js/library/modules/_promise-resolve.js",
-      "issuerName": "./node_modules/core-js/library/modules/_promise-resolve.js",
+      "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_species-constructor.js",
+      "issuerId": "./node_modules/core-js/library/modules/_species-constructor.js",
+      "issuerName": "./node_modules/core-js/library/modules/_species-constructor.js",
       "issuerPath": [
         {
           "id": 0,
@@ -15894,9 +15894,9 @@
           "name": "./node_modules/core-js/library/modules/es7.promise.finally.js"
         },
         {
-          "id": "./node_modules/core-js/library/modules/_promise-resolve.js",
-          "identifier": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_promise-resolve.js",
-          "name": "./node_modules/core-js/library/modules/_promise-resolve.js"
+          "id": "./node_modules/core-js/library/modules/_species-constructor.js",
+          "identifier": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_species-constructor.js",
+          "name": "./node_modules/core-js/library/modules/_species-constructor.js"
         }
       ],
       "failed": false,
@@ -16005,7 +16005,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-keys-internal.js",
       "issuerId": "./node_modules/core-js/library/modules/_object-keys-internal.js",
@@ -16101,7 +16101,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -16181,7 +16181,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_classof.js",
       "issuerId": "./node_modules/core-js/library/modules/_classof.js",
@@ -16293,7 +16293,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/promise.js",
       "issuerId": "./node_modules/core-js/library/fn/promise.js",
@@ -16476,7 +16476,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -16583,7 +16583,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_string-at.js",
       "issuerId": "./node_modules/core-js/library/modules/_string-at.js",
@@ -16677,7 +16677,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_hide.js",
       "issuerId": "./node_modules/core-js/library/modules/_hide.js",
@@ -16816,7 +16816,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_task.js",
       "issuerId": "./node_modules/core-js/library/modules/_task.js",
@@ -16910,7 +16910,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-create.js",
       "issuerId": "./node_modules/core-js/library/modules/_object-create.js",
@@ -17014,7 +17014,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -17100,7 +17100,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es7.promise.finally.js",
       "issuerId": "./node_modules/core-js/library/modules/es7.promise.finally.js",
@@ -17243,7 +17243,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-sap.js",
       "issuerId": "./node_modules/core-js/library/modules/_object-sap.js",
@@ -17360,7 +17360,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -17431,7 +17431,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es7.promise.finally.js",
       "issuerId": "./node_modules/core-js/library/modules/es7.promise.finally.js",
@@ -17619,7 +17619,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_export.js",
       "issuerId": "./node_modules/core-js/library/modules/_export.js",
@@ -17749,7 +17749,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/web.dom.iterable.js",
       "issuerId": "./node_modules/core-js/library/modules/web.dom.iterable.js",
@@ -17874,7 +17874,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_task.js",
       "issuerId": "./node_modules/core-js/library/modules/_task.js",
@@ -17959,7 +17959,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-dp.js",
       "issuerId": "./node_modules/core-js/library/modules/_object-dp.js",
@@ -18049,7 +18049,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_task.js",
       "issuerId": "./node_modules/core-js/library/modules/_task.js",
@@ -18125,7 +18125,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_to-iobject.js",
       "issuerId": "./node_modules/core-js/library/modules/_to-iobject.js",
@@ -18206,7 +18206,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_for-of.js",
       "issuerId": "./node_modules/core-js/library/modules/_for-of.js",
@@ -18282,7 +18282,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -18368,7 +18368,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -18502,7 +18502,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_for-of.js",
       "issuerId": "./node_modules/core-js/library/modules/_for-of.js",
@@ -18578,7 +18578,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_iter-define.js",
       "issuerId": "./node_modules/core-js/library/modules/_iter-define.js",
@@ -18654,7 +18654,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.string.iterator.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.string.iterator.js",
@@ -18734,7 +18734,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -18805,7 +18805,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.array.iterator.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.array.iterator.js",
@@ -18881,7 +18881,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/web.dom.iterable.js",
       "issuerId": "./node_modules/core-js/library/modules/web.dom.iterable.js",
@@ -18988,7 +18988,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -19095,7 +19095,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -19181,7 +19181,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -19252,7 +19252,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es7.promise.try.js",
       "issuerId": "./node_modules/core-js/library/modules/es7.promise.try.js",
@@ -19341,7 +19341,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.object.create.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.object.create.js",
@@ -19440,7 +19440,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_hide.js",
       "issuerId": "./node_modules/core-js/library/modules/_hide.js",
@@ -19579,7 +19579,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-create.js",
       "issuerId": "./node_modules/core-js/library/modules/_object-create.js",
@@ -19665,7 +19665,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_set-proto.js",
       "issuerId": "./node_modules/core-js/library/modules/_set-proto.js",
@@ -19760,7 +19760,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -19846,7 +19846,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -19941,7 +19941,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -20036,7 +20036,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
@@ -20121,7 +20121,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-keys.js",
       "issuerId": "./node_modules/core-js/library/modules/_object-keys.js",
@@ -20221,7 +20221,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -20325,7 +20325,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.symbol.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.symbol.js",
@@ -20429,7 +20429,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
@@ -20505,7 +20505,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es7.promise.try.js",
       "issuerId": "./node_modules/core-js/library/modules/es7.promise.try.js",
@@ -20585,7 +20585,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es7.promise.finally.js",
       "issuerId": "./node_modules/core-js/library/modules/es7.promise.finally.js",
@@ -20665,7 +20665,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_hide.js",
       "issuerId": "./node_modules/core-js/library/modules/_hide.js",
@@ -20768,7 +20768,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -20839,7 +20839,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_iter-define.js",
       "issuerId": "./node_modules/core-js/library/modules/_iter-define.js",
@@ -20924,7 +20924,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.object.set-prototype-of.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.object.set-prototype-of.js",
@@ -21005,7 +21005,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -21076,7 +21076,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -21174,7 +21174,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-gpo.js",
       "issuerId": "./node_modules/core-js/library/modules/_object-gpo.js",
@@ -21273,7 +21273,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_wks.js",
       "issuerId": "./node_modules/core-js/library/modules/_wks.js",
@@ -21367,7 +21367,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es7.promise.finally.js",
       "issuerId": "./node_modules/core-js/library/modules/es7.promise.finally.js",
@@ -21447,7 +21447,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.string.iterator.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.string.iterator.js",
@@ -21518,7 +21518,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -21598,7 +21598,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_array-includes.js",
       "issuerId": "./node_modules/core-js/library/modules/_array-includes.js",
@@ -21699,7 +21699,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-hot-loader/dist/react-hot-loader.development.js",
       "issuerId": "./node_modules/react-hot-loader/dist/react-hot-loader.development.js",
@@ -21796,7 +21796,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_string-at.js",
       "issuerId": "./node_modules/core-js/library/modules/_string-at.js",
@@ -21890,7 +21890,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.array.iterator.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.array.iterator.js",
@@ -22011,7 +22011,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_for-of.js",
       "issuerId": "./node_modules/core-js/library/modules/_for-of.js",
@@ -22096,7 +22096,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
@@ -22181,7 +22181,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_object-dp.js",
       "issuerId": "./node_modules/core-js/library/modules/_object-dp.js",
@@ -22280,7 +22280,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_wks.js",
       "issuerId": "./node_modules/core-js/library/modules/_wks.js",
@@ -22383,7 +22383,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es6.promise.js",
       "issuerId": "./node_modules/core-js/library/modules/es6.promise.js",
@@ -22454,7 +22454,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/es7.symbol.async-iterator.js",
       "issuerId": "./node_modules/core-js/library/modules/es7.symbol.async-iterator.js",
@@ -22558,7 +22558,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/symbol/iterator.js",
       "issuerId": "./node_modules/core-js/library/fn/symbol/iterator.js",
@@ -22657,7 +22657,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/web.dom.iterable.js",
       "issuerId": "./node_modules/core-js/library/modules/web.dom.iterable.js",
@@ -22836,7 +22836,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/_for-of.js",
       "issuerId": "./node_modules/core-js/library/modules/_for-of.js",
@@ -22912,7 +22912,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/modules/web.dom.iterable.js",
       "issuerId": "./node_modules/core-js/library/modules/web.dom.iterable.js",
@@ -22983,7 +22983,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/object/create.js",
       "issuerId": "./node_modules/core-js/library/fn/object/create.js",
@@ -23059,7 +23059,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/object/define-property.js",
       "issuerId": "./node_modules/core-js/library/fn/object/define-property.js",
@@ -23135,7 +23135,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/object/get-prototype-of.js",
       "issuerId": "./node_modules/core-js/library/fn/object/get-prototype-of.js",
@@ -23206,7 +23206,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/object/set-prototype-of.js",
       "issuerId": "./node_modules/core-js/library/fn/object/set-prototype-of.js",
@@ -23282,7 +23282,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/promise.js",
       "issuerId": "./node_modules/core-js/library/fn/promise.js",
@@ -23357,7 +23357,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/promise.js",
       "issuerId": "./node_modules/core-js/library/fn/promise.js",
@@ -23423,7 +23423,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/promise.js",
       "issuerId": "./node_modules/core-js/library/fn/promise.js",
@@ -23498,7 +23498,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/symbol/index.js",
       "issuerId": "./node_modules/core-js/library/fn/symbol/index.js",
@@ -23579,7 +23579,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/promise.js",
       "issuerId": "./node_modules/core-js/library/fn/promise.js",
@@ -23645,7 +23645,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/promise.js",
       "issuerId": "./node_modules/core-js/library/fn/promise.js",
@@ -23711,7 +23711,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/symbol/index.js",
       "issuerId": "./node_modules/core-js/library/fn/symbol/index.js",
@@ -23792,7 +23792,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/symbol/index.js",
       "issuerId": "./node_modules/core-js/library/fn/symbol/index.js",
@@ -23873,7 +23873,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/core-js/library/fn/promise.js",
       "issuerId": "./node_modules/core-js/library/fn/promise.js",
@@ -24106,7 +24106,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/css-loader/index.js??ref--6-1!/home/rosewell/Studies/webpack4_2/node_modules/sass-loader/lib/loader.js!/home/rosewell/Studies/webpack4_2/src/nav.scss",
       "issuerId": "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/nav.scss",
@@ -24176,7 +24176,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-hot-loader/dist/react-hot-loader.development.js",
       "issuerId": "./node_modules/react-hot-loader/dist/react-hot-loader.development.js",
@@ -24237,7 +24237,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-dom/cjs/react-dom.development.js",
       "issuerId": "./node_modules/react-dom/cjs/react-dom.development.js",
@@ -24303,7 +24303,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/fbjs/lib/camelizeStyleName.js",
       "issuerId": "./node_modules/fbjs/lib/camelizeStyleName.js",
@@ -24374,7 +24374,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-dom/cjs/react-dom.development.js",
       "issuerId": "./node_modules/react-dom/cjs/react-dom.development.js",
@@ -24440,7 +24440,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-dom/cjs/react-dom.development.js",
       "issuerId": "./node_modules/react-dom/cjs/react-dom.development.js",
@@ -24506,7 +24506,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react/cjs/react.development.js",
       "issuerId": "./node_modules/react/cjs/react.development.js",
@@ -24590,7 +24590,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react/cjs/react.development.js",
       "issuerId": "./node_modules/react/cjs/react.development.js",
@@ -24665,7 +24665,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-dom/cjs/react-dom.development.js",
       "issuerId": "./node_modules/react-dom/cjs/react-dom.development.js",
@@ -24731,7 +24731,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/fbjs/lib/hyphenateStyleName.js",
       "issuerId": "./node_modules/fbjs/lib/hyphenateStyleName.js",
@@ -24802,7 +24802,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-dom/cjs/react-dom.development.js",
       "issuerId": "./node_modules/react-dom/cjs/react-dom.development.js",
@@ -24868,7 +24868,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react/cjs/react.development.js",
       "issuerId": "./node_modules/react/cjs/react.development.js",
@@ -24943,7 +24943,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/fbjs/lib/isTextNode.js",
       "issuerId": "./node_modules/fbjs/lib/isTextNode.js",
@@ -25019,7 +25019,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/fbjs/lib/containsNode.js",
       "issuerId": "./node_modules/fbjs/lib/containsNode.js",
@@ -25090,7 +25090,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-dom/cjs/react-dom.development.js",
       "issuerId": "./node_modules/react-dom/cjs/react-dom.development.js",
@@ -25156,7 +25156,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react/cjs/react.development.js",
       "issuerId": "./node_modules/react/cjs/react.development.js",
@@ -25231,7 +25231,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/webpack-hot-middleware/client-overlay.js",
       "issuerId": "./node_modules/webpack-hot-middleware/client-overlay.js",
@@ -25287,7 +25287,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/html-entities/index.js",
       "issuerId": "./node_modules/html-entities/index.js",
@@ -25348,7 +25348,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/html-entities/index.js",
       "issuerId": "./node_modules/html-entities/index.js",
@@ -25418,7 +25418,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/html-entities/index.js",
       "issuerId": "./node_modules/html-entities/index.js",
@@ -25479,7 +25479,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react/cjs/react.development.js",
       "issuerId": "./node_modules/react/cjs/react.development.js",
@@ -25563,7 +25563,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react/cjs/react.development.js",
       "issuerId": "./node_modules/react/cjs/react.development.js",
@@ -25647,7 +25647,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/prop-types/index.js",
       "issuerId": "./node_modules/prop-types/index.js",
@@ -25713,7 +25713,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-hot-loader/dist/react-hot-loader.development.js",
       "issuerId": "./node_modules/react-hot-loader/dist/react-hot-loader.development.js",
@@ -25774,7 +25774,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/prop-types/checkPropTypes.js",
       "issuerId": "./node_modules/prop-types/checkPropTypes.js",
@@ -25854,7 +25854,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/querystring-es3/index.js",
       "issuerId": "./node_modules/querystring-es3/index.js",
@@ -25910,7 +25910,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/querystring-es3/index.js",
       "issuerId": "./node_modules/querystring-es3/index.js",
@@ -25966,7 +25966,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/webpack-hot-middleware/client.js?reload=true",
       "issuerId": "./node_modules/webpack-hot-middleware/client.js?reload=true",
@@ -26017,7 +26017,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-dom/index.js",
       "issuerId": "./node_modules/react-dom/index.js",
@@ -26078,7 +26078,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/app.js",
       "issuerId": "./src/app.js",
@@ -26134,7 +26134,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-hot-loader/index.js",
       "issuerId": "./node_modules/react-hot-loader/index.js",
@@ -26190,7 +26190,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/main.js",
       "issuerId": "./src/main.js",
@@ -26322,7 +26322,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-hot-loader/dist/react-hot-loader.development.js",
       "issuerId": "./node_modules/react-hot-loader/dist/react-hot-loader.development.js",
@@ -26385,7 +26385,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react/index.js",
       "issuerId": "./node_modules/react/index.js",
@@ -26446,7 +26446,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/babel-loader/lib/index.js!/home/rosewell/Studies/webpack4_2/src/app.js",
       "issuerId": "./src/app.js",
@@ -26529,7 +26529,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/react-hot-loader/dist/react-hot-loader.development.js",
       "issuerId": "./node_modules/react-hot-loader/dist/react-hot-loader.development.js",
@@ -26590,7 +26590,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/webpack-hot-middleware/client.js?reload=true",
       "issuerId": "./node_modules/webpack-hot-middleware/client.js?reload=true",
@@ -26641,7 +26641,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/style-loader/index.js!/home/rosewell/Studies/webpack4_2/node_modules/css-loader/index.js??ref--6-1!/home/rosewell/Studies/webpack4_2/node_modules/sass-loader/lib/loader.js!/home/rosewell/Studies/webpack4_2/src/nav.scss",
       "issuerId": "./src/nav.scss",
@@ -26706,7 +26706,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/style-loader/lib/addStyles.js",
       "issuerId": "./node_modules/style-loader/lib/addStyles.js",
@@ -26767,7 +26767,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/webpack-hot-middleware/client.js?reload=true",
       "issuerId": "./node_modules/webpack-hot-middleware/client.js?reload=true",
@@ -26818,7 +26818,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "multi babel-runtime/regenerator webpack-hot-middleware/client?reload=true ./src/main.js",
       "issuerId": 0,
@@ -26864,7 +26864,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/webpack-hot-middleware/client.js?reload=true",
       "issuerId": "./node_modules/webpack-hot-middleware/client.js?reload=true",
@@ -26915,7 +26915,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/fast-levenshtein/levenshtein.js",
       "issuerId": "./node_modules/fast-levenshtein/levenshtein.js",
@@ -26981,7 +26981,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/fast-levenshtein/levenshtein.js",
       "issuerId": "./node_modules/fast-levenshtein/levenshtein.js",
@@ -27047,7 +27047,7 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "vendors~main"
+        "vendors-main"
       ],
       "issuer": "/home/rosewell/Studies/webpack4_2/node_modules/webpack-hot-middleware/client.js?reload=true",
       "issuerId": "./node_modules/webpack-hot-middleware/client.js?reload=true",
@@ -27315,7 +27315,7 @@
       "name": "./src/index.html",
       "index": 111,
       "index2": 109,
-      "size": 429,
+      "size": 438,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -27358,7 +27358,7 @@
       "optimizationBailout": [
       ],
       "depth": 2,
-      "source": "module.exports = \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n  <head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <title>Webpack 4</title>\\n  </head>\\n  <body>\\n    <div class=\\\"profile\\\">\\n      <!-- <img src=\\\"./images/400.jpg\\\" alt=\\\"\\\"> -->\\n      <!-- <h1>Hello Webpack 4</h1> -->\\n      <div id=\\\"react-root\\\"></div>\\n      <!-- <div id=\\\"app\\\"></div> -->\\n    </div>\\n    <script src=\\\"/main-bundle.js\\\"></script>\\n  </body>\\n</html>\\n\";"
+      "source": "module.exports = \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n  <head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <title>Webpack 4</title>\\n  </head>\\n  <body>\\n    <div class=\\\"profile\\\">\\n      <!-- <img src=\\\"./images/400.jpg\\\" alt=\\\"\\\"> -->\\n      <!-- <h1>Hello Webpack 4</h1> -->\\n      <div id=\\\"react-root\\\"></div>\\n      <!-- <div id=\\\"app\\\"></div> -->\\n    </div>\\n    <!-- <script src=\\\"/main-bundle.js\\\"></script> -->\\n  </body>\\n</html>\\n\";"
     },
     {
       "id": "./src/main.js",
@@ -27521,176 +27521,5 @@
   ],
   "filteredModules": 0,
   "children": [
-    {
-      "errors": [
-      ],
-      "warnings": [
-      ],
-      "publicPath": "/",
-      "outputPath": "/home/rosewell/Studies/webpack4_2/dist",
-      "assetsByChunkName": {
-      },
-      "assets": [
-        {
-          "name": "index.html",
-          "size": 28309,
-          "chunks": [
-            0
-          ],
-          "chunkNames": [
-          ]
-        }
-      ],
-      "filteredAssets": 0,
-      "entrypoints": {
-        "undefined": {
-          "chunks": [
-            0
-          ],
-          "assets": [
-            "index.html"
-          ],
-          "children": {
-          },
-          "childAssets": {
-          }
-        }
-      },
-      "namedChunkGroups": {
-        "undefined": {
-          "chunks": [
-            0
-          ],
-          "assets": [
-            "index.html"
-          ],
-          "children": {
-          },
-          "childAssets": {
-          }
-        }
-      },
-      "chunks": [
-        {
-          "id": 0,
-          "rendered": true,
-          "initial": true,
-          "entry": true,
-          "size": 429,
-          "names": [
-          ],
-          "files": [
-            "index.html"
-          ],
-          "hash": "88e34e5ab3d20ffabc87",
-          "siblings": [
-          ],
-          "parents": [
-          ],
-          "children": [
-          ],
-          "childrenByOrder": {
-          },
-          "modules": [
-            {
-              "id": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
-              "identifier": "/home/rosewell/Studies/webpack4_2/node_modules/html-webpack-plugin/lib/loader.js!/home/rosewell/Studies/webpack4_2/node_modules/html-loader/index.js??ref--7-0!/home/rosewell/Studies/webpack4_2/src/index.html",
-              "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
-              "index": 0,
-              "index2": 0,
-              "size": 429,
-              "cacheable": true,
-              "built": true,
-              "optional": false,
-              "prefetched": false,
-              "chunks": [
-                0
-              ],
-              "issuer": null,
-              "issuerId": null,
-              "issuerName": null,
-              "issuerPath": null,
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "assets": [
-              ],
-              "reasons": [
-                {
-                  "moduleId": null,
-                  "moduleIdentifier": null,
-                  "module": null,
-                  "moduleName": null,
-                  "type": "single entry",
-                  "userRequest": "/home/rosewell/Studies/webpack4_2/node_modules/html-webpack-plugin/lib/loader.js!/home/rosewell/Studies/webpack4_2/src/index.html"
-                }
-              ],
-              "providedExports": null,
-              "optimizationBailout": [
-              ],
-              "depth": 0,
-              "source": "module.exports = \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n  <head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <title>Webpack 4</title>\\n  </head>\\n  <body>\\n    <div class=\\\"profile\\\">\\n      <!-- <img src=\\\"./images/400.jpg\\\" alt=\\\"\\\"> -->\\n      <!-- <h1>Hello Webpack 4</h1> -->\\n      <div id=\\\"react-root\\\"></div>\\n      <!-- <div id=\\\"app\\\"></div> -->\\n    </div>\\n    <script src=\\\"/main-bundle.js\\\"></script>\\n  </body>\\n</html>\\n\";"
-            }
-          ],
-          "filteredModules": 0,
-          "origins": [
-            {
-              "module": "",
-              "moduleIdentifier": "",
-              "moduleName": "",
-              "loc": "",
-              "request": "/home/rosewell/Studies/webpack4_2/node_modules/html-webpack-plugin/lib/loader.js!/home/rosewell/Studies/webpack4_2/src/index.html",
-              "reasons": [
-              ]
-            }
-          ]
-        }
-      ],
-      "modules": [
-        {
-          "id": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
-          "identifier": "/home/rosewell/Studies/webpack4_2/node_modules/html-webpack-plugin/lib/loader.js!/home/rosewell/Studies/webpack4_2/node_modules/html-loader/index.js??ref--7-0!/home/rosewell/Studies/webpack4_2/src/index.html",
-          "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
-          "index": 0,
-          "index2": 0,
-          "size": 429,
-          "cacheable": true,
-          "built": true,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            0
-          ],
-          "issuer": null,
-          "issuerId": null,
-          "issuerName": null,
-          "issuerPath": null,
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "assets": [
-          ],
-          "reasons": [
-            {
-              "moduleId": null,
-              "moduleIdentifier": null,
-              "module": null,
-              "moduleName": null,
-              "type": "single entry",
-              "userRequest": "/home/rosewell/Studies/webpack4_2/node_modules/html-webpack-plugin/lib/loader.js!/home/rosewell/Studies/webpack4_2/src/index.html"
-            }
-          ],
-          "providedExports": null,
-          "optimizationBailout": [
-          ],
-          "depth": 0,
-          "source": "module.exports = \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n  <head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <title>Webpack 4</title>\\n  </head>\\n  <body>\\n    <div class=\\\"profile\\\">\\n      <!-- <img src=\\\"./images/400.jpg\\\" alt=\\\"\\\"> -->\\n      <!-- <h1>Hello Webpack 4</h1> -->\\n      <div id=\\\"react-root\\\"></div>\\n      <!-- <div id=\\\"app\\\"></div> -->\\n    </div>\\n    <script src=\\\"/main-bundle.js\\\"></script>\\n  </body>\\n</html>\\n\";"
-        }
-      ],
-      "filteredModules": 0,
-      "children": [
-      ],
-      "name": "html-webpack-plugin for \"index.html\""
-    }
   ]
 }

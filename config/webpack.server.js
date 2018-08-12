@@ -1,27 +1,20 @@
 const path = require('path');
 const webpack = require('webpack');
-const htmlWebpackPlugin = require('html-webpack-plugin');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
-const optimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const minifyPlugin = require('babel-minify-webpack-plugin');
-const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const compressionPlugin = require('compression-webpack-plugin');
-const BrotliPlugin = require('brotli-webpack-plugin');
-// const { VueLoaderPlugin } = require('vue-loader');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = (env) => {
   return {
     entry: {
-      // main: ['babel-polyfill', './src/main.js']
-      // main: ['core-js/fn/promise', './src/main.js']
-      main: ['./src/main.js']
+      server: './src/server/main.js'
     },
     mode: 'production',
     output: {
       filename: '[name]-bundle.js',
-      path: path.resolve(__dirname, '../dist'),
-      publicPath: '/'
+      path: path.resolve(__dirname, '../build')
     },
+    target: 'node',
+    externals: nodeExternals(),     // skip everything in node_modules
     optimization: {
       splitChunks: {
         chunks: 'all',      // overridden by cacheGroups.chunks
@@ -35,17 +28,8 @@ module.exports = (env) => {
         }
       }
     },
-    resolve: {
-      alias: {
-        vue$: 'vue/dist/vue.esm.js'
-      }
-    },
     module: {
       rules: [
-        {
-          test: /\.vue$/,
-          loader: 'vue-loader'
-        },
         {
           test: /\.js$/,
           exclude: /node_modules/,
@@ -81,7 +65,10 @@ module.exports = (env) => {
           use: [
             {
               loader: 'file-loader',
-              options: { name: 'images/[name]-[hash:8].[ext]' }
+              options: {
+                name: 'images/[name]-[hash:8].[ext]',
+                emitFile: false
+              }
             }
           ]
         },
@@ -93,18 +80,11 @@ module.exports = (env) => {
       ]
     },
     plugins: [
-      // new htmlWebpackPlugin({ template: './src/index.html' }),
-      new optimizeCssAssetsPlugin(),
       new miniCssExtractPlugin({ name: '[name]-[contenthash].[ext]' }),
       new webpack.DefinePlugin({
         // 'process.env.NODE_ENV': JSON.stringify('production')
         'process.env.NODE_ENV': JSON.stringify(env.NODE_ENV)
-      }),
-      // new minifyPlugin()
-      new uglifyJsPlugin(),
-      new compressionPlugin({ algorithm: 'gzip' }),
-      new BrotliPlugin()
-      // new VueLoaderPlugin()
+      })
     ]
   }
 };
