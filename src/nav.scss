@@ -1,5 +1,14 @@
-a {
-  color: #fff;
-  padding: 10px 20px;
-  cursor: pointer;
+.nav {
+  line-height: 2rem;
+  background-color: #000;
+  width: 50% !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+
+  a {
+    font-family: 'source-code-pro', 'sans-serif';
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+  }
 }

@@ -17,15 +17,15 @@ body {
     box-shadow: 0 0 20px #000;
   }
 
-  h1 {
-    font-family: 'source-code-pro', 'sans-serif';
-    font-weight: 400;
-    // color: #fff;
-  }
-
   .content {
     font-size: 14px;
   }
+}
+
+h1 {
+  font-family: 'source-code-pro', 'sans-serif';
+  font-weight: 400;
+  // color: #fff;
 }
 
 .counter {

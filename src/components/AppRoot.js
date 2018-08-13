@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import post from '../../data/post.md';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './Routes';
 import '../main.scss';
 
 class AppRoot extends Component {
@@ -10,11 +11,9 @@ class AppRoot extends Component {
 
   render() {
     return (
-      <div>
-        <img src={require("../images/400.jpg")} alt="" />
-        <h1>{post.title}</h1>
-        <div className="content" dangerouslySetInnerHTML={{ __html: post.__content }} />
-      </div>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
     );
   }
 }

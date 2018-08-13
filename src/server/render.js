@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
-const AppRoot = require('../components/AppRoot').default;
+import { StaticRouter } from 'react-router';
+import Routes from '../components/Routes';
+// const AppRoot = require('../components/AppRoot').default;
 
 export default () => (req, res) => {
   /* const html = ReactDOMServer.renderToString(<div>Hello SSR with Webpack 4</div>);
@@ -15,7 +17,11 @@ export default () => (req, res) => {
       </head>
       <body>
         <div class="profile">
-          <div id="react-root">${ReactDOMServer.renderToString(<AppRoot />)}</div>
+          <div id="react-root">${ReactDOMServer.renderToString(
+            <StaticRouter location={req.url} context={{}}>
+              <Routes />
+            </StaticRouter>
+          )}</div>
         </div>
         <script src="vendors-main-bundle.js"></script>
         <script src="main-bundle.js"></script>

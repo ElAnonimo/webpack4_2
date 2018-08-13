@@ -1,11 +1,8 @@
 import express from 'express';
-import React from 'react';
 import expressStaticGzip from 'express-static-gzip';
-import webpackHotServerMiddleware from 'webpack-hot-server-middleware';
-import ReactDOMServer from 'react-dom/server';
-import AppRoot from '../components/AppRoot';
-
 import webpack from 'webpack';
+import webpackHotServerMiddleware from 'webpack-hot-server-middleware';
+
 import configDevClient from '../../config/webpack.dev-client';
 import configDevServer from '../../config/webpack.dev-server';
 import configProdClient from '../../config/webpack.prod-client';
@@ -21,26 +18,27 @@ if (!isProd) {
   const clientCompiler = compiler.compilers[0];
   const serverCompiler = compiler.compilers[1];
 
-  const webpackDevMiddleware = require('webpack-dev-middleware')(compiler, configDevClient.devServer);
+  const webpackDevMiddleware = require('webpack-dev-middleware')(
+    compiler,
+    configDevClient.devServer
+  );
 
-  const webpackHotMiddleware = require('webpack-hot-middleware')(clientCompiler, configDevClient.devServer);
+  const webpackHotMiddlware = require('webpack-hot-middleware')(
+    clientCompiler,
+    configDevClient.devServer
+  );
 
   server.use(webpackDevMiddleware);
-  server.use(webpackHotMiddleware);
-  server.use(webpackHotServerMiddleware(compiler));   // webpackHotServerMiddleware will look for 'server' compiler within 'compiler' arg
+  server.use(webpackHotMiddlware);
+  server.use(webpackHotServerMiddleware(compiler));
+  console.log('Middleware enabled');
 } else {
   webpack([configProdClient, configProdServer]).run((err, stats) => {
     const render = require('../../build/prod-server-bundle.js').default;
-
-    // const staticMiddleware = express.static('dist');
-    // server.use(staticMiddleware);
-    // const expressStaticGzip = require('express-static-gzip');
     server.use(expressStaticGzip('dist', { enableBrotli: true }));
-
-    server.get('*', render());
-  });
+    server.use(render());
+  })
 }
 
 const port = process.env.PORT || 8080;
-
-server.listen(port, console.log(`Server\'s listening on http://localhost:${port}`));
+server.listen(port, console.log(`Server listening on http://localhost:${port} in ${process.env.NODE_ENV}`));

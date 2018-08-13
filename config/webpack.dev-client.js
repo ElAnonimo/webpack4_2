@@ -19,6 +19,7 @@ module.exports = {
   mode: 'development',
   output: {
     filename: '[name]-bundle.js',
+    chunkFilename: '[name].js',
     path: path.resolve(__dirname, '../dist'),
     publicPath: '/'
   },
@@ -63,8 +64,8 @@ module.exports = {
       {
         test: /\.s?css$/,
         use: [
-          // { loader: 'style-loader' },
-          { loader: miniCssExtractPlugin.loader },
+          { loader: 'style-loader' },
+          // { loader: miniCssExtractPlugin.loader },
           { loader: 'css-loader',
             options: {
               modules: false,

@@ -9,7 +9,8 @@ module.exports = {
   mode: 'production',
   output: {
     filename: 'prod-server-bundle.js',
-    path: path.resolve(__dirname, '../build')
+    path: path.resolve(__dirname, '../build'),
+    libraryTarget: "commonjs2"
   },
   target: 'node',
   externals: nodeExternals(),     // don't process node_modules with Webpack, use node modules with Node directly
@@ -36,7 +37,7 @@ module.exports = {
       {
         test: /\.s?css$/,
         use: [
-          { loader: miniCssExtractPlugin.loader },
+          // { loader: miniCssExtractPlugin.loader },
           { loader: 'css-loader' },
           { loader: 'sass-loader' }
         ]
