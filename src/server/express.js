@@ -1,51 +1,45 @@
 import express from 'express';
 import React from 'react';
+import expressStaticGzip from 'express-static-gzip';
+import webpackHotServerMiddleware from 'webpack-hot-server-middleware';
 import ReactDOMServer from 'react-dom/server';
 import AppRoot from '../components/AppRoot';
+
+import webpack from 'webpack';
+import configDevClient from '../../config/webpack.dev-client';
+import configDevServer from '../../config/webpack.dev-server';
+import configProdClient from '../../config/webpack.prod-client';
+import configProdServer from '../../config/webpack.prod-server';
 
 const server = express();
 
 const isProd = process.env.NODE_ENV === 'production';
 
 if (!isProd) {
-  const webpack = require('webpack');
-  const config = require('../../config/webpack.dev');
-  const compiler = webpack(config);
+  const compiler = webpack([configDevClient, configDevServer]);
 
-  const webpackDevMiddleware = require('webpack-dev-middleware')(compiler, config.devServer);
+  const clientCompiler = compiler.compilers[0];
+  const serverCompiler = compiler.compilers[1];
 
-  const webpackHotMiddleware = require('webpack-hot-middleware')(compiler);
+  const webpackDevMiddleware = require('webpack-dev-middleware')(compiler, configDevClient.devServer);
+
+  const webpackHotMiddleware = require('webpack-hot-middleware')(clientCompiler, configDevClient.devServer);
 
   server.use(webpackDevMiddleware);
   server.use(webpackHotMiddleware);
+  server.use(webpackHotServerMiddleware(compiler));   // webpackHotServerMiddleware will look for 'server' compiler within 'compiler' arg
+} else {
+  webpack([configProdClient, configProdServer]).run((err, stats) => {
+    const render = require('../../build/prod-server-bundle.js').default;
+
+    // const staticMiddleware = express.static('dist');
+    // server.use(staticMiddleware);
+    // const expressStaticGzip = require('express-static-gzip');
+    server.use(expressStaticGzip('dist', { enableBrotli: true }));
+
+    server.get('*', render());
+  });
 }
-
-// const staticMiddleware = express.static('dist');
-// server.use(staticMiddleware);
-const expressStaticGzip = require('express-static-gzip');
-server.use(expressStaticGzip('dist', { enableBrotli: true }));
-
-server.get('*', (req, res) => {
-  /* const html = ReactDOMServer.renderToString(<div>Hello SSR with Webpack 4</div>);
-  res.send(html); */
-
-  res.send(`
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <title>Webpack 4</title>
-        <link href="main.css" rel="stylesheet" />
-      </head>
-      <body>
-        <div class="profile">
-          <div id="react-root">${ReactDOMServer.renderToString(<AppRoot />)}</div>
-        </div>
-        <script src="vendors-main-bundle.js"></script>
-        <script src="main-bundle.js"></script>
-      </body>
-    </html>    
-  `);
-});
 
 const port = process.env.PORT || 8080;
 

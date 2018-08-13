@@ -6,7 +6,7 @@ import AppRoot from './components/AppRoot';
 import bio from '../data/bio';
 
 const render = (Component) => {
-  ReactDOM.render(
+  ReactDOM.hydrate(
     <AppContainer>
       <Component heading={bio.heading} bio={bio.bio} />
     </AppContainer>,
