@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const extractCssChunks = require('extract-css-chunks-webpack-plugin');
 // const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
@@ -64,8 +65,9 @@ module.exports = {
       {
         test: /\.s?css$/,
         use: [
-          { loader: 'style-loader' },
+          // { loader: 'style-loader' },
           // { loader: miniCssExtractPlugin.loader },
+          { loader: extractCssChunks.loader },
           { loader: 'css-loader',
             options: {
               modules: false,
@@ -124,7 +126,8 @@ module.exports = {
     new BundleAnalyzerPlugin({
       generateStatsFile: true,
       openAnalyzer: false
-    })
+    }),
+    new extractCssChunks({ hot: true })
     // new VueLoaderPlugin()
   ]
 };

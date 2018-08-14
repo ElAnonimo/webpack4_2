@@ -1,5 +1,6 @@
 import React from 'react';
 import post from '../../data/post.md';
+import '../css/About.scss';
 
 export default () => <div>
   <img src={require("../images/400.jpg")} alt="" />

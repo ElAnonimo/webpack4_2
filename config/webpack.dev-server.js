@@ -1,7 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
-const nodeExternals = require('webpack-node-externals');
+// const nodeExternals = require('webpack-node-externals');
+const externals = require('../config/node-externals');
 
 module.exports = {
   name: 'server',
@@ -13,7 +14,8 @@ module.exports = {
     libraryTarget: "commonjs2"
   },
   target: 'node',
-  externals: nodeExternals(),     // don't process node_modules with Webpack, use node modules with Node directly
+  // externals: nodeExternals(),     // don't process node_modules with Webpack, use node modules with Node directly
+  externals,
   optimization: {
     splitChunks: {
       chunks: 'all',              // overridden by cacheGroups.chunks
@@ -79,6 +81,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 }),
     new miniCssExtractPlugin({ name: '[name]-[contenthash].[ext]' }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')

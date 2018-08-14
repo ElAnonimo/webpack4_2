@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/Gallery.scss';
 
 const getBundle = () => {
   import(/* webpackChunkName: 'lodash' */ 'lodash').then((_) => {
