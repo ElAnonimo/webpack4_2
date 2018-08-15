@@ -11,6 +11,7 @@ module.exports = {
   entry: {
     // main: ['babel-polyfill', './src/main.js']
     // main: ['core-js/fn/promise', './src/main.js']
+    vendor: ['react', 'react-dom'],
     main: [
       'babel-runtime/regenerator',
       'webpack-hot-middleware/client?reload=true',
@@ -33,15 +34,29 @@ module.exports = {
     hot: true
   },
   devtool: 'source-map',
-  optimization: {
+  /* optimization: {
     splitChunks: {
-      chunks: 'all',      // overridden by cacheGroups.chunks
+      // chunks: 'all',      // overridden by cacheGroups.chunks
       automaticNameDelimiter: "-",
       cacheGroups: {
         vendor: {
           name: 'vendor',
           chunks: 'initial',
           minChunks: 2
+        }
+      }
+    }
+  }, */
+  optimization: {
+    runtimeChunk: {
+      name: "bootstrap"
+    },
+    splitChunks: {
+      chunks: "initial",
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendor"
         }
       }
     }

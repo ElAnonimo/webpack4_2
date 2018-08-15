@@ -1,8 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
-// const nodeExternals = require('webpack-node-externals');
-const externals = require('../config/node-externals');
+const nodeExternals = require('webpack-node-externals');
+const externals = require('./node-externals');
 
 module.exports = {
   name: 'server',
@@ -15,21 +15,8 @@ module.exports = {
     libraryTarget: "commonjs2"
   },
   target: 'node',
-  // externals: nodeExternals(),     // don't process node_modules with Webpack, use node modules with Node directly
+  //externals: nodeExternals(),     // don't process node_modules with Webpack, use node modules with Node directly
   externals,
-  optimization: {
-    splitChunks: {
-      chunks: 'all',              // overridden by cacheGroups.chunks
-      automaticNameDelimiter: "-",
-      cacheGroups: {
-        vendor: {
-          name: 'vendor',
-          chunks: 'initial',
-          minChunks: 2
-        }
-      }
-    }
-  },
   module: {
     rules: [
       {
@@ -68,7 +55,8 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'images/[name]-[hash:8].[ext]',
+              // name: { name: 'images/[name]-[hash:8].[ext]' }
+              name: 'images/[name].[ext]',
               emitFile: false
             }
           }

@@ -15,23 +15,39 @@ module.exports = {
   entry: {
     // main: ['babel-polyfill', './src/main.js']
     // main: ['core-js/fn/promise', './src/main.js']
-    main: './src/main.js'
+    vendor: ['react', 'react-dom'],
+    main: ['./src/main.js']
   },
   mode: 'production',
   output: {
     filename: '[name]-bundle.js',
+    chunkFilename: '[name].js',
     path: path.resolve(__dirname, '../dist'),
     publicPath: '/'
   },
-  optimization: {
+  /* optimization: {
     splitChunks: {
-      chunks: 'all',      // overridden by cacheGroups.chunks
+      // chunks: 'all',      // overridden by cacheGroups.chunks
       automaticNameDelimiter: "-",
       cacheGroups: {
         vendor: {
           name: 'vendor',
           chunks: 'initial',
           minChunks: 2
+        }
+      }
+    }
+  }, */
+  optimization: {
+    runtimeChunk: {
+      name: "bootstrap"
+    },
+    splitChunks: {
+      chunks: "initial",
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendor"
         }
       }
     }
@@ -83,7 +99,8 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            options: { name: 'images/[name]-[hash:8].[ext]' }
+            // options: { name: 'images/[name]-[hash:8].[ext]' }
+            options: { name: 'images/[name].[ext]' }
           }
         ]
       },
