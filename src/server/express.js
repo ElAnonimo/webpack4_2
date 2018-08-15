@@ -30,10 +30,11 @@ if (!isProd) {
 
   server.use(webpackDevMiddleware);
   server.use(webpackHotMiddlware);
-  server.use(webpackHotServerMiddleware(compiler));
+  server.use(webpackHotServerMiddleware(compiler));     // webpackHotServerMiddleware takes the `name: 'server'` compilers
   console.log('Middleware enabled');
 } else {
   webpack([configProdClient, configProdServer]).run((err, stats) => {
+    // stats lists all the files (js, css) we use in configProdClient, configProdServer
     const clientStats = stats.toJson().children[0];     // configProdClient stats
     const render = require('../../build/prod-server-bundle.js').default;
     server.use(expressStaticGzip('dist', { enableBrotli: true }));

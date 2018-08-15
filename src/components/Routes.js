@@ -2,9 +2,9 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import { Switch } from 'react-router';
 import universal from 'react-universal-component';
-import About from './About';
+/* import About from './About';
 import Gallery from './Gallery';
-import Article from './Article';
+import Article from './Article'; */
 
 const UniversalComponent = universal(props => import(`./${props.page}`));
 
