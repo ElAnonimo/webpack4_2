@@ -10,8 +10,12 @@ export default ({ clientStats }) => (req, res) => {
   /* const html = ReactDOMServer.renderToString(<div>Hello SSR with Webpack 4</div>);
   res.send(html); */
 
+  const context = {
+    site: req.hostname.split('.')[0]
+  };
+
   const app = ReactDOMServer.renderToString(
-    <StaticRouter location={req.url} context={{}}>
+    <StaticRouter location={req.url} context={context}>
       <Routes />
     </StaticRouter>
   );
