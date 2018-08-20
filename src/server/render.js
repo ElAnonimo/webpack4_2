@@ -10,9 +10,15 @@ export default ({ clientStats }) => (req, res) => {
   /* const html = ReactDOMServer.renderToString(<div>Hello SSR with Webpack 4</div>);
   res.send(html); */
 
-  const context = {
+  const site = req.hostname.split('.')[0];
+  const names = flushChunkNames().concat([`css/${site}-theme`]);
+
+  /* const context = {
     site: req.hostname.split('.')[0]
-  };
+  }; */
+  const context = { site };
+
+  // const names = flushChunkNames();
 
   const app = ReactDOMServer.renderToString(
     <StaticRouter location={req.url} context={context}>
@@ -21,7 +27,8 @@ export default ({ clientStats }) => (req, res) => {
   );
 
   const { js, styles, cssHash } = flushChunks(clientStats, {
-    chunkNames: flushChunkNames()
+    // chunkNames: flushChunkNames()
+    chunkNames: names
   });
 
   res.send(`

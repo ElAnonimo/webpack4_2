@@ -81,8 +81,8 @@ module.exports = {
         test: /\.s?css$/,
         use: [
           // { loader: 'style-loader' },
-          // { loader: miniCssExtractPlugin.loader },
-          { loader: extractCssChunks.loader },
+          { loader: miniCssExtractPlugin.loader },
+          // { loader: extractCssChunks.loader },
           { loader: 'css-loader',
             options: {
               modules: false,
@@ -142,7 +142,8 @@ module.exports = {
       generateStatsFile: true,
       openAnalyzer: false
     }),
-    new extractCssChunks({ hot: true })
+    // new extractCssChunks({ hot: true })
+    new miniCssExtractPlugin()
     // new VueLoaderPlugin()
   ]
 };

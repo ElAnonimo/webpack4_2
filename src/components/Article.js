@@ -1,6 +1,20 @@
 import React from 'react';
 import '../css/Article.scss';
 
-export default () => <div>
-  <h1>Article</h1>
-</div>;
+export default (props) => {
+  const siteConfig = require(`../../data/${props.site}/siteConfig`);
+  // const post = require('../../data/post.md');
+  const post = require(`../../data/${props.site}/bio.md`);
+  // const imagePath = require('../images/400.jpg');
+  const imagePath = require(`../images/${siteConfig.aboutImage}`);
+
+  import(`../css/${props.site}/theme.scss`);
+
+  return (
+    <div>
+      <img src={ imagePath } alt="" />
+      <h1>{ post.title }</h1>
+      <div className="content" dangerouslySetInnerHTML={{__html: post.__content}} />
+    </div>
+  );
+};

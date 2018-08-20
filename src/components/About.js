@@ -12,7 +12,7 @@ export default (props) => {
     <div>
       <img src={ imagePath } alt="" />
       <h1>{ post.title }</h1>
-      <div className="content" dangerouslySetInnerHTML={ {__html: post.__content} } />
+      <div className="content" dangerouslySetInnerHTML={{__html: post.__content}} />
     </div>
   );
 };

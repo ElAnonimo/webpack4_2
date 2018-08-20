@@ -25,8 +25,12 @@ export default () => <div>
     <Route exact path='/'>
       <UniversalComponent page='Gallery' />
     </Route>
-    <Route path='/article'>
+    <Route path='/article/:slug' render={({ staticContext, match }) => {
+      const site = staticContext ? staticContext.site : location.hostname.split('.')[0];
+      return <UniversalComponent page='Article' site={site} match={match} />}}
+    />
+    {/* <Route path='/article'>
       <UniversalComponent page='Article' />
-    </Route>
+    </Route> */}
   </Switch>
 </div>
