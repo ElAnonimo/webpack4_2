@@ -5,6 +5,7 @@ import universal from 'react-universal-component';
 /* import About from './About';
 import Gallery from './Gallery';
 import Article from './Article'; */
+import NotFound from './NotFound';
 
 const UniversalComponent = universal(props => import(`./${props.page}`));
 
@@ -12,7 +13,8 @@ export default () => <div>
   <div className="nav">
     <Link to='/about'>About</Link>
     <Link to='/'>Gallery</Link>
-    <Link to='/article'>Article</Link>
+    <Link to='/article/post'>Article 1</Link>
+    <Link to='/article/post2'>Article 2</Link>
   </div>
   {/* <Route path='/about' component={About} />
   <Route exact path='/' component={Gallery} />
@@ -32,5 +34,6 @@ export default () => <div>
     {/* <Route path='/article'>
       <UniversalComponent page='Article' />
     </Route> */}
+    <Route component={NotFound} />
   </Switch>
 </div>

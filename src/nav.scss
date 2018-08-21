@@ -4,6 +4,9 @@
   width: 50% !important;
   flex-direction: row !important;
   justify-content: space-between !important;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 
   a {
     font-family: 'source-code-pro', 'sans-serif';

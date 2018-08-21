@@ -12,6 +12,26 @@
   }
 
   .content {
-    font-size: 14px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    max-width: 740px;
+
+    img {
+      width: 100%;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    border-radius: 0;
+    grid-gap: 0;
   }
 }
