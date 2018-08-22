@@ -12,6 +12,11 @@ const server = express();
 
 const isProd = process.env.NODE_ENV === 'production';
 
+server.get('/api/articles/:slug', (req, res) => {
+  console.log('slug:', req.params.slug);
+  res.json(req.params.slug);
+});
+
 if (!isProd) {
   const compiler = webpack([configDevClient, configDevServer]);
 

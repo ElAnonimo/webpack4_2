@@ -5,6 +5,8 @@ import Routes from '../components/Routes';
 // const AppRoot = require('../components/AppRoot').default;
 import { flushChunkNames } from 'react-universal-component/server';
 import flushChunks from 'webpack-flush-chunks';
+import { Provider } from 'react-redux';
+import store from './store';
 
 export default ({ clientStats }) => (req, res) => {
   /* const html = ReactDOMServer.renderToString(<div>Hello SSR with Webpack 4</div>);
@@ -21,9 +23,11 @@ export default ({ clientStats }) => (req, res) => {
   // const names = flushChunkNames();
 
   const app = ReactDOMServer.renderToString(
-    <StaticRouter location={req.url} context={context}>
-      <Routes />
-    </StaticRouter>
+    <Provider store={store}>
+      <StaticRouter location={req.url} context={context}>
+        <Routes />
+      </StaticRouter>
+    </Provider>
   );
 
   const { js, styles, cssHash } = flushChunks(clientStats, {
